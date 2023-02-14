@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlotte</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div class="nav">
+
+        <div class="navright">
+            <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+            <p id="p">{{ user }}</p>
+        </div>
+
+
+        <div class="settings">
+            <img class="navimg" src="{% static './img/Screenshot 2023-02-08 at 8.02.36 AM.png' %}" alt="">
+          
+            
+            <img class="menu_icon js-menu-icon" src="{% static './img/download.png' %}" />
+            <div class="menu">
+                
+                <div class="e">
+                    <a href="{% url 'edit' %}">Edit Profile</a><br>
+                </div>
+                <div class="d">
+                    <a href="{% url 'logout' %}">Logout</a> 
+                </div>
+            
+            </div>
+
+
+        </div>
+
+    </div>
+    <section class="friends">
+        <div class="chats">
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Annie</p>
+                </div>
+                <div class="green">
+                    <img src="{% static './img/Green_Dot_(Active).png' %}" alt="">
+                </div>
+
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Annie</p>
+                </div>
+                <div class="green">
+                    <img src="{% static './img/Green_Dot_(Active).png' %}" alt="">
+                </div>
+
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Thejas</p>
+                </div>
+                <div class="green">
+                    <img src="{% static './img/Green_Dot_(Active).png' %}" alt="">
+                </div>
+
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Divyasha</p>
+                </div>
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Hero</p>
+                </div>
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Nisha</p>
+                </div>
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Annie</p>
+                </div>
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Annie</p>
+                </div>
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Annie</p>
+                </div>
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}"alt="">
+                </div>
+                <div class="na">
+                    <p>Annie</p>
+                </div>
+            </div>
+            <div class="name">
+                <div class="pic">
+                    <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+                </div>
+                <div class="na">
+                    <p>Annie</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+    <section class="sone">
+        <div class="name">
+            <div class="pic">
+                <img src="{% static './img/pexels-min-an-1115697.jpg' %}" alt="">
+            </div>
+            <div class="na">
+                <p>Thejas</p>
+            </div>
+            <div class="greenone">
+                <img src="{% static './img/Green_Dot_(Active).png' %}" alt="">
+            </div>
+
+
+
+        </div>
+        <div class="spanone">
+            <span class="small">Hi Nakia</span>
+        </div>
+        <div class="spantwo">
+            <span class="smallone">Hi Thejas</span>
+        </div>
+        <div class="spanthree">
+            <span class="smallone">How are you doing?</span>
+        </div>
+        <div class="spanfour">
+            <span class="smallone">I am doing good... How is your web development course going on in TECH I.S.</span>
+        </div>
+        <div class="spanfive">
+            <span class="smallone">It's going good. The training that TECH I.S. provides ensures that the students are
+                prepared to succeed in the fast-paced world of technology.</span>
+        </div>
+
+
+
+    </section>
+    <div class="lastimg">
+        <img src="{% static './img/last.png' %}" alt="">
+    </div>
+    <div class="poweredby">
+        <p>powered by TECH I.S.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+
+</html>
